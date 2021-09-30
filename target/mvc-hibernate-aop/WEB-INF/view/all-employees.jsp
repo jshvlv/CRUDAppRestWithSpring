@@ -55,6 +55,8 @@
         </td>
     </tr>
 </table>
+</hr>
+<a href="api/employees">Потрогать REST (api/employees)</a>
 
 </body>
 </html>
