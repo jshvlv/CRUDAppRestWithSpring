@@ -1,0 +1,41 @@
+h2 {
+   color: dimgray;
+   text-align: center;
+}
+input.btn{
+   background-color: floralwhite;
+}
+
+table.someGray {
+   font-family: "Lucida Console", Monaco, monospace;
+   border: 0px solid #000000;
+   width: 60%;
+   text-align: center;
+   border-collapse: collapse;
+}
+table.someGray td, table.someGray th {
+   border: 0px solid #000000;
+   padding: 5px 3px;
+}
+table.someGray tbody td {
+   font-size: 16px;
+   color: #747474;
+}
+table.someGray tr:nth-child(even) {
+   background: #F3F3F3;
+}
+table.someGray thead {
+   border-bottom: 1px solid #000000;
+}
+table.someGray thead th {
+   font-size: 17px;
+   font-weight: bold;
+   color: #2D2D2D;
+   text-align: center;
+}
+table.someGray tfoot td {
+   font-size: 14px;
+}
+table.someGray tr:hover {
+   background: aliceblue; /* Цвет фона при наведении */
+}
