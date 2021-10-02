@@ -3,13 +3,13 @@ h2 {
    text-align: center;
 }
 input.btn{
-   background-color: floralwhite;
+   background-color: cornsilk;
 }
 
 table.someGray {
    font-family: "Lucida Console", Monaco, monospace;
    border: 0px solid #000000;
-   width: 60%;
+   width: 90%;
    text-align: center;
    border-collapse: collapse;
 }

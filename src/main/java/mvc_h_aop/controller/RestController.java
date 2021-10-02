@@ -33,20 +33,27 @@ public class RestController {
         return employee;
     }
 
-    @ExceptionHandler
-    public ResponseEntity<EmployeIncorrectData> handleException(NoSuchEmployeeException noSuchEmployeeException){
-        EmployeIncorrectData  data = new EmployeIncorrectData();
-        data.setInfo(noSuchEmployeeException.getMessage());
-
-        return new ResponseEntity<>(data, HttpStatus.NOT_FOUND);
+    @PostMapping("/employees")
+    public Employee addNewEmployee(@RequestBody Employee employee){
+        employeeService.saveEmployee(employee);
+        return employee;
     }
 
-    @ExceptionHandler
-    public ResponseEntity<EmployeIncorrectData> handleException(Exception exception){
-        EmployeIncorrectData  data = new EmployeIncorrectData();
-        data.setInfo(exception.getMessage());
+    @PutMapping("/employees")
+    public Employee updateEmployee(@RequestBody Employee employee){
+        employeeService.saveEmployee(employee);
+        return employee;
+    }
 
-        return new ResponseEntity<>(data, HttpStatus.BAD_REQUEST);
+    @DeleteMapping("/employees/{id}")
+    public String deleteEmployee(@PathVariable int id){
+        Employee em = employeeService.getEmployee(id);
+        if (em==null){
+            throw new NoSuchEmployeeException("Not found =(");
+        }
+        String name = em.getName() + " " + em.getSurname();
+        employeeService.deleteEmployee(id);
+        return name + " was deleted successfully!";
     }
 
 }
