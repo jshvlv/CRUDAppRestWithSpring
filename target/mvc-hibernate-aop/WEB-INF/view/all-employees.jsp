@@ -54,9 +54,14 @@
             <input type="button" value="Add new" class="btn" onclick="window.location.href = '/addEmployee'"/>
         </td>
     </tr>
+
+    <tr>
+        <td colspan="6">
+            <a href="api/employees">Потрогать REST (api/employees)</a>
+        </td>
+    </tr>
 </table>
-</hr>
-<a href="api/employees">Потрогать REST (api/employees)</a>
+
 
 </body>
 </html>
