@@ -3,39 +3,62 @@ h2 {
    text-align: center;
 }
 input.btn{
-   background-color: floralwhite;
+   background-color: white;
 }
+input.txt{
+   border-top: 0px;
+   border-left: 1px solid gray;
+   border-bottom: 0px;
+   border-right: 0px;
+}
+table.someGray tr:hover {
+   color: orangered; /* Цвет фона при наведении */
+   background-color: #F4F4F4;
+}
+
 
 table.someGray {
    font-family: "Lucida Console", Monaco, monospace;
-   border: 0px solid #000000;
-   width: 60%;
+   width: 100%;
    text-align: center;
    border-collapse: collapse;
 }
 table.someGray td, table.someGray th {
-   border: 0px solid #000000;
-   padding: 5px 3px;
+   padding: 5px 5px;
 }
 table.someGray tbody td {
-   font-size: 16px;
-   color: #747474;
-}
-table.someGray tr:nth-child(even) {
-   background: #F3F3F3;
+   border-bottom: 1px solid darkgray;
+   font-size: 13px;
 }
 table.someGray thead {
-   border-bottom: 1px solid #000000;
+   background: #CFCFCF;
+   background: -moz-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+   background: -webkit-linear-gradient(top, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+   background: linear-gradient(to bottom, #dbdbdb 0%, #d3d3d3 66%, #CFCFCF 100%);
+   border-bottom: 3px solid #000000;
 }
 table.someGray thead th {
    font-size: 17px;
    font-weight: bold;
-   color: #2D2D2D;
+   color: #000000;
    text-align: center;
 }
-table.someGray tfoot td {
-   font-size: 14px;
+/* unvisited link */
+a:link {
+   color: black;
 }
-table.someGray tr:hover {
-   background: aliceblue; /* Цвет фона при наведении */
+
+/* visited link */
+a:visited {
+   color: black;
+}
+
+/* mouse over link */
+a:hover {
+   color: red;
+}
+
+/* selected link */
+a:active {
+   color: darkgrey;
 }

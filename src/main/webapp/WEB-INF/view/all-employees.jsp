@@ -16,7 +16,7 @@
         <th>Surname</th>
         <th>Department</th>
         <th>Salary</th>
-        <th>Kick</th>
+        <th>Delete</th>
     </tr>
     <c:forEach var="emp" items="${allEmps}" varStatus="сounter">
         <c:url var="updateButton" value="/updateInfo">

@@ -13,22 +13,22 @@
     <form:hidden path="id"/>
     <table class="someGray">
         <tr><td> Name </td>
-            <td><form:input path="name"/></td>
+            <td><form:input path="name" cssClass="txt"/></td>
         </tr>
 
         <tr>
         <td>Surname </td>
-        <td><form:input path="surname"/></td>
+        <td><form:input path="surname" cssClass="txt"/></td>
         </tr>
 
         <tr>
             <td>Department </td>
-            <td><form:input path="department"/></td>
+            <td><form:input path="department" cssClass="txt"/></td>
         </tr>
 
         <tr>
             <td>Salary</td>
-            <td><form:input path="salary"/></td>
+            <td><form:input path="salary" cssClass="txt"/></td>
         </tr>
 
         <tr>
